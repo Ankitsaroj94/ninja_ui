@@ -26,3 +26,12 @@ dependencies:
   magic_ui:
     git:
       url: https://github.com/Ankitsaroj94/magic_ui.git
+      ref: main
+```
+---
+## Quick Installation
+
+Use this Command 
+
+```flutter pub add magic_ui --git-url=https://github.com/Ankitsaroj94/magic_ui --git-ref=main```
+
