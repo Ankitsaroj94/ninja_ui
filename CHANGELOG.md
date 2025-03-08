@@ -9,6 +9,7 @@
 - Fix dependency constraints.
 
 
-## [0.0.11] - 2024-03-08
-- Update package version.
-- Change Package Name.
+## [0.0.12] - 2024-03-08
+- Updated package name to `magic_ui_color`.
+- Fixed minor bugs in button components.
+- Improved widget styling.

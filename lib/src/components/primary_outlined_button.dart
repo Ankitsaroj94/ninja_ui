@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/utils.dart';
 import 'package:magic_extensions/magic_extensions.dart';
-import 'package:magic_ui_color/magic_ui.dart';
+import 'package:magic_ui_color/magic_ui_color.dart';
 
 
 
