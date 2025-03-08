@@ -1,6 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:flutter/material.dart';
-import 'package:magic_ui/magic_ui.dart';
+import 'package:magic_ui_color/magic_ui.dart';
 
 
 void main() {

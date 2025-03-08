@@ -7,3 +7,8 @@
 ## [0.0.11] - 2024-03-08
 - Update package version.
 - Fix dependency constraints.
+
+
+## [0.0.11] - 2024-03-08
+- Update package version.
+- Change Package Name.

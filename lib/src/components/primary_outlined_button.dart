@@ -2,10 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/utils.dart';
 import 'package:magic_extensions/magic_extensions.dart';
-import 'package:magic_ui/src/theme/app_text_style.dart';
+import 'package:magic_ui_color/magic_ui.dart';
 
-import '../theme/app_colors.dart';
-import 'magic_loader.dart';
+
 
 class PrimaryOutlinedButton extends StatelessWidget {
   const PrimaryOutlinedButton({
