@@ -1,9 +1,9 @@
 name: ninja_ui
 description: "A Flutter UI package with reusable components, customizable text styles, and a wide range of colors."
-version: 0.0.15
+version: 0.0.16
 homepage: https://github.com/Ankitsaroj94/ninja_ui
 repository: https://github.com/Ankitsaroj94/ninja_ui
-issue_tracker: https://github.com/Ankitsaroj94/ninja_ui/issues
+issue_tracker: https://github.com/Ankitsaroj94/ninja_ui/issues/1#issue-2907897585
 license: MIT
 
 
