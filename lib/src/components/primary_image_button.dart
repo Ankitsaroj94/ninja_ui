@@ -60,9 +60,10 @@ class PrimaryImageButton extends StatelessWidget {
         ),
         child: InkWell(
           borderRadius: BorderRadius.circular(radius),
-          onTap: isDisabled
-              ? null
-              : isLoading
+          onTap:
+              isDisabled
+                  ? null
+                  : isLoading
                   ? null
                   : onPress,
           child: AnimatedContainer(
@@ -73,20 +74,22 @@ class PrimaryImageButton extends StatelessWidget {
             height: buttonHeight,
             width: width,
             duration: 500.milliseconds,
-            child: isLoading
-                ? MagicLoader(
-                    size: buttonHeight / 2,
-                    color: isDisabled
-                        ? disabledForegroundColor
-                        : activeForegroundColor,
-                  )
-                : Image.asset(
-                    imagePath,
-                    color: 
-                      isDisabled
-                          ? disabledForegroundColor
-                          : activeForegroundColor,
-                  ),
+            child:
+                isLoading
+                    ? MagicLoader(
+                      size: buttonHeight / 2,
+                      color:
+                          isDisabled
+                              ? disabledForegroundColor
+                              : activeForegroundColor,
+                    )
+                    : Image.asset(
+                      imagePath,
+                      color:
+                          isDisabled
+                              ? disabledForegroundColor
+                              : activeForegroundColor,
+                    ),
           ),
         ),
       ),

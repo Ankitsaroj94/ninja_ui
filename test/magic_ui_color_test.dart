@@ -2,21 +2,19 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:flutter/material.dart';
 import 'package:magic_ui_color/magic_ui_color.dart';
 
-
 void main() {
   group('Magic UI Package Tests', () {
     test('AppColors primary color should be correct', () {
       expect(AppColors.primary.shade500, equals(Color(0xFF2E90FA)));
     });
 
-    testWidgets('PrimaryIconButton renders correctly', (WidgetTester tester) async {
+    testWidgets('PrimaryIconButton renders correctly', (
+      WidgetTester tester,
+    ) async {
       await tester.pumpWidget(
         MaterialApp(
           home: Scaffold(
-            body: PrimaryIconButton(
-              icon: Icons.add,
-              onTap: () {},
-            ),
+            body: PrimaryIconButton(icon: Icons.add, onTap: () {}),
           ),
         ),
       );
@@ -24,14 +22,13 @@ void main() {
       expect(find.byIcon(Icons.add), findsOneWidget);
     });
 
-    testWidgets('PrimaryOutlinedButton renders correctly', (WidgetTester tester) async {
+    testWidgets('PrimaryOutlinedButton renders correctly', (
+      WidgetTester tester,
+    ) async {
       await tester.pumpWidget(
         MaterialApp(
           home: Scaffold(
-            body: PrimaryOutlinedButton(
-              label: 'Submit',
-              onTap: () {},
-            ),
+            body: PrimaryOutlinedButton(label: 'Submit', onTap: () {}),
           ),
         ),
       );
@@ -42,9 +39,7 @@ void main() {
     testWidgets('MagicLoader renders correctly', (WidgetTester tester) async {
       await tester.pumpWidget(
         const MaterialApp(
-          home: Scaffold(
-            body: MagicLoader(size: 30, color: Colors.blue),
-          ),
+          home: Scaffold(body: MagicLoader(size: 30, color: Colors.blue)),
         ),
       );
 
@@ -60,7 +55,9 @@ void main() {
                 onPressed: () {
                   showDialog(
                     context: context,
-                    builder: (context) => const CustomDialog(child: Text("Test Dialog")),
+                    builder:
+                        (context) =>
+                            const CustomDialog(child: Text("Test Dialog")),
                   );
                 },
                 child: const Text('Show Dialog'),

@@ -2,13 +2,8 @@ import 'package:flutter/material.dart';
 
 import '../theme/app_colors.dart';
 
-class  CustomDialog extends StatelessWidget {
-  const  CustomDialog({
-    super.key,
-    required this.child,
-    this.height,
-    this.width,
-  });
+class CustomDialog extends StatelessWidget {
+  const CustomDialog({super.key, required this.child, this.height, this.width});
   final Widget child;
   final double? height;
   final double? width;

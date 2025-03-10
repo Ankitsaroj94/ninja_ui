@@ -5,7 +5,7 @@ import 'package:magic_extensions/magic_extensions.dart';
 
 import '../theme/app_colors.dart';
 
-class MagicLoader extends StatelessWidget {
+class MagicLoader extends StatelessWidget {  
   const MagicLoader({
     super.key,
     required this.size,
@@ -21,16 +21,17 @@ class MagicLoader extends StatelessWidget {
   Widget build(BuildContext context) {
     // Determine the widget size and shape
     return size.square(
-      child: defaultTargetPlatform == TargetPlatform.iOS
-          ? CupertinoActivityIndicator(
-              // Set color for iOS platform
-              color: color,
-            )
-          : CircularProgressIndicator(
-              // Set stroke width and color for other platforms
-              strokeWidth: strokeWidth ?? 2,
-              valueColor: AlwaysStoppedAnimation<Color>(color),
-            ),
+      child:
+          defaultTargetPlatform == TargetPlatform.iOS
+              ? CupertinoActivityIndicator(
+                // Set color for iOS platform
+                color: color,
+              )
+              : CircularProgressIndicator(
+                // Set stroke width and color for other platforms
+                strokeWidth: strokeWidth ?? 2,
+                valueColor: AlwaysStoppedAnimation<Color>(color),
+              ),
     );
   }
 

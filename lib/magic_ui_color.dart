@@ -1,8 +1,6 @@
-
 // Theme
 export 'src/theme/app_colors.dart';
 export 'src/theme/app_text_style.dart';
-
 
 // Components
 export 'src/components/primary_icon_button.dart';

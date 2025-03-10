@@ -4,8 +4,6 @@ import 'package:get/utils.dart';
 import 'package:magic_extensions/magic_extensions.dart';
 import 'package:magic_ui_color/magic_ui_color.dart';
 
-
-
 class PrimaryOutlinedButton extends StatelessWidget {
   const PrimaryOutlinedButton({
     super.key,
@@ -61,11 +59,13 @@ class PrimaryOutlinedButton extends StatelessWidget {
         this.disabledForegroundColor ?? AppColors.primary;
 
     // Determine the active text style
-    TextStyle activeTextStyle = this.activeTextStyle ??
+    TextStyle activeTextStyle =
+        this.activeTextStyle ??
         AppTextStyles.f16w400.copyWith(color: activeForegroundColor);
 
     // Determine the disabled text style
-    TextStyle disabledTextStyle = this.disabledTextStyle ??
+    TextStyle disabledTextStyle =
+        this.disabledTextStyle ??
         AppTextStyles.f16w400.copyWith(color: disabledForegroundColor);
 
     // Check if the button is disabled
@@ -87,49 +87,54 @@ class PrimaryOutlinedButton extends StatelessWidget {
         ),
         child: InkWell(
           borderRadius: BorderRadius.circular(radius),
-          onTap: isDisabled
-              ? null
-              : isLoading
+          onTap:
+              isDisabled
+                  ? null
+                  : isLoading
                   ? null
                   : onPress,
           child: AnimatedContainer(
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(radius),
               border: Border.all(
-                color: isDisabled
-                    ? disabledBackgroundColor
-                    : activeBackgroundColor,
+                color:
+                    isDisabled
+                        ? disabledBackgroundColor
+                        : activeBackgroundColor,
               ),
             ),
             padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
             height: height,
             width: width,
             duration: 500.milliseconds,
-            child: isLoading
-                ? MagicLoader(
-                    size: height / 2,
-                    color: isDisabled
-                        ? disabledForegroundColor
-                        : activeForegroundColor,
-                  )
-                : Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    mainAxisSize: MainAxisSize.min,
-                    children: [
-                      // Add leading widget if available
-                      if (leading != null) leading!.marginOnly(right: gap),
+            child:
+                isLoading
+                    ? MagicLoader(
+                      size: height / 2,
+                      color:
+                          isDisabled
+                              ? disabledForegroundColor
+                              : activeForegroundColor,
+                    )
+                    : Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        // Add leading widget if available
+                        if (leading != null) leading!.marginOnly(right: gap),
 
-                      // Add label with translation and style based on disabled state
-                      label.toText(
-                        style:
-                            (isDisabled ? disabledTextStyle : activeTextStyle)
-                                .copyWith(height: -.2),
-                      ),
+                        // Add label with translation and style based on disabled state
+                        label.toText(
+                          style: (isDisabled
+                                  ? disabledTextStyle
+                                  : activeTextStyle)
+                              .copyWith(height: -.2),
+                        ),
 
-                      // Add trailing widget if available
-                      if (trailing != null) trailing!.marginOnly(left: gap),
-                    ],
-                  ),
+                        // Add trailing widget if available
+                        if (trailing != null) trailing!.marginOnly(left: gap),
+                      ],
+                    ),
           ),
         ),
       ),
@@ -155,11 +160,13 @@ class PrimaryOutlinedButton extends StatelessWidget {
         this.disabledForegroundColor ?? AppColors.primary;
 
     // Determine the active text style
-    TextStyle activeTextStyle = this.activeTextStyle ??
+    TextStyle activeTextStyle =
+        this.activeTextStyle ??
         AppTextStyles.f12w400.copyWith(color: activeForegroundColor);
 
     // Determine the disabled text style
-    TextStyle disabledTextStyle = this.disabledTextStyle ??
+    TextStyle disabledTextStyle =
+        this.disabledTextStyle ??
         AppTextStyles.f12w400.copyWith(color: disabledForegroundColor);
 
     if (fontSize != null) {
@@ -186,49 +193,54 @@ class PrimaryOutlinedButton extends StatelessWidget {
         ),
         child: InkWell(
           borderRadius: BorderRadius.circular(radius),
-          onTap: isDisabled
-              ? null
-              : isLoading
+          onTap:
+              isDisabled
+                  ? null
+                  : isLoading
                   ? null
                   : onPress,
           child: AnimatedContainer(
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(radius),
               border: Border.all(
-                color: isDisabled
-                    ? disabledBackgroundColor
-                    : activeBackgroundColor,
+                color:
+                    isDisabled
+                        ? disabledBackgroundColor
+                        : activeBackgroundColor,
               ),
             ),
             padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
             height: height,
             width: width,
             duration: 500.milliseconds,
-            child: isLoading
-                ? MagicLoader(
-                    size: height / 2,
-                    color: isDisabled
-                        ? disabledForegroundColor
-                        : activeForegroundColor,
-                  )
-                : Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    mainAxisSize: MainAxisSize.min,
-                    children: [
-                      // Add leading widget if available
-                      if (leading != null) leading!.marginOnly(right: gap),
+            child:
+                isLoading
+                    ? MagicLoader(
+                      size: height / 2,
+                      color:
+                          isDisabled
+                              ? disabledForegroundColor
+                              : activeForegroundColor,
+                    )
+                    : Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        // Add leading widget if available
+                        if (leading != null) leading!.marginOnly(right: gap),
 
-                      // Add label with translation and style based on disabled state
-                      label.toText(
-                        style:
-                            (isDisabled ? disabledTextStyle : activeTextStyle)
-                                .copyWith(height: -.2),
-                      ),
+                        // Add label with translation and style based on disabled state
+                        label.toText(
+                          style: (isDisabled
+                                  ? disabledTextStyle
+                                  : activeTextStyle)
+                              .copyWith(height: -.2),
+                        ),
 
-                      // Add trailing widget if available
-                      if (trailing != null) trailing!.marginOnly(left: gap),
-                    ],
-                  ),
+                        // Add trailing widget if available
+                        if (trailing != null) trailing!.marginOnly(left: gap),
+                      ],
+                    ),
           ),
         ),
       ),
@@ -299,38 +311,43 @@ class PrimaryOutlinedButtonIcon extends StatelessWidget {
         ),
         child: InkWell(
           borderRadius: BorderRadius.circular(radius),
-          onTap: isDisabled
-              ? null
-              : isLoading
+          onTap:
+              isDisabled
+                  ? null
+                  : isLoading
                   ? null
                   : onPress,
           child: AnimatedContainer(
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(radius),
               border: Border.all(
-                color: isDisabled
-                    ? disabledBackgroundColor
-                    : activeBackgroundColor,
+                color:
+                    isDisabled
+                        ? disabledBackgroundColor
+                        : activeBackgroundColor,
               ),
             ),
             padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
             height: height,
             width: width,
             duration: 500.milliseconds,
-            child: isLoading
-                ? MagicLoader(
-                    size: height / 2,
-                    color: isDisabled
-                        ? disabledForegroundColor
-                        : activeForegroundColor,
-                  )
-                : Icon(
-                    icon,
-                    size: height - 8,
-                    color: isDisabled
-                        ? disabledForegroundColor
-                        : activeForegroundColor,
-                  ),
+            child:
+                isLoading
+                    ? MagicLoader(
+                      size: height / 2,
+                      color:
+                          isDisabled
+                              ? disabledForegroundColor
+                              : activeForegroundColor,
+                    )
+                    : Icon(
+                      icon,
+                      size: height - 8,
+                      color:
+                          isDisabled
+                              ? disabledForegroundColor
+                              : activeForegroundColor,
+                    ),
           ),
         ),
       ),
@@ -398,9 +415,10 @@ class OutlinedButtonImage extends StatelessWidget {
       ),
       child: InkWell(
         borderRadius: BorderRadius.circular(radius),
-        onTap: isDisabled
-            ? null
-            : isLoading
+        onTap:
+            isDisabled
+                ? null
+                : isLoading
                 ? null
                 : onPress,
         child: AnimatedContainer(
@@ -415,17 +433,22 @@ class OutlinedButtonImage extends StatelessWidget {
           height: buttonHeight,
           width: width,
           duration: 500.milliseconds,
-          child: isLoading
-              ? MagicLoader(
-                  size: buttonHeight / 2,
-                  color: isDisabled
-                      ? disabledForegroundColor
-                      : activeForegroundColor,
-                )
-              : Image.asset(
-                  imagePath,
-                color:isDisabled? disabledForegroundColor: activeForegroundColor,
-                ),
+          child:
+              isLoading
+                  ? MagicLoader(
+                    size: buttonHeight / 2,
+                    color:
+                        isDisabled
+                            ? disabledForegroundColor
+                            : activeForegroundColor,
+                  )
+                  : Image.asset(
+                    imagePath,
+                    color:
+                        isDisabled
+                            ? disabledForegroundColor
+                            : activeForegroundColor,
+                  ),
         ),
       ),
     );
