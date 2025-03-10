@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:magic_extensions/magic_extensions.dart';
+import 'package:magic_ui_color/src/widgets/magic_num_extension.dart';
 
 import '../theme/app_colors.dart';
 

@@ -15,7 +15,7 @@ dependencies:
   flutter:
     sdk: flutter
   get: ^4.7.2
-  magic_extensions: ^0.0.7
+  intl: ^0.20.2
 
 dev_dependencies:
   flutter_test:

@@ -10,3 +10,14 @@ export 'src/components/magic_loader.dart';
 
 // Widgets
 export 'src/widgets/custom_dialog.dart';
+export 'src/widgets/magic_color_extension.dart';
+export 'src/widgets/magic_date_extension.dart';
+export 'src/widgets/magic_duration_extension.dart';
+export 'src/widgets/magic_int_extension.dart';
+export 'src/widgets/magic_iterable_extension.dart';
+export 'src/widgets/magic_num_extension.dart';
+export 'src/widgets/magic_status_colors.dart';
+export 'src/widgets/magic_string_extension.dart';
+export 'src/widgets/magic_time_extension.dart';
+export 'src/widgets/magic_universal_extension.dart';
+export 'src/widgets/magic_widget_extension.dart';
