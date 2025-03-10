@@ -4,7 +4,18 @@ import 'package:get/utils.dart';
 import 'package:magic_extensions/magic_extensions.dart';
 import 'package:magic_ui_color/magic_ui_color.dart';
 
+/// A customizable outlined button widget with optional leading and trailing widgets.
+///
+/// The [PrimaryOutlinedButton] can be used to create a button with a label, optional
+/// leading and trailing widgets, and customizable colors and styles.
+///
+/// The button can be in a loading state, and it supports both active and disabled states.
+///
+/// The [onTap] callback is triggered when the button is pressed.
 class PrimaryOutlinedButton extends StatelessWidget {
+  /// Creates a [PrimaryOutlinedButton].
+  ///
+  /// The [label] parameter must not be null.
   const PrimaryOutlinedButton({
     super.key,
     this.activeBackgroundColor,
@@ -24,20 +35,49 @@ class PrimaryOutlinedButton extends StatelessWidget {
     this.width,
   });
 
+  /// The background color when the button is active.
   final Color? activeBackgroundColor;
+
+  /// The background color when the button is disabled.
   final Color? disabledBackgroundColor;
+
+  /// The foreground color when the button is active.
   final Color? activeForegroundColor;
+
+  /// The foreground color when the button is disabled.
   final Color? disabledForegroundColor;
+
+  /// The text style when the button is active.
   final TextStyle? activeTextStyle;
+
+  /// The text style when the button is disabled.
   final TextStyle? disabledTextStyle;
+
+  /// An optional widget to display before the label.
   final Widget? leading;
+
+  /// An optional widget to display after the label.
   final Widget? trailing;
+
+  /// The gap between the leading/trailing widget and the label.
   final double gap;
+
+  /// Whether the button is in a loading state.
   final bool isLoading;
+
+  /// The callback to be called when the button is tapped.
   final VoidCallback? onTap;
+
+  /// The height of the button.
   final double height;
+
+  /// The width of the button.
   final double? width;
+
+  /// The border radius of the button.
   final double radius;
+
+  /// The label text of the button.
   final String label;
 
   @override
@@ -141,7 +181,9 @@ class PrimaryOutlinedButton extends StatelessWidget {
     );
   }
 
-  // Method to create a smaller version of the button
+  /// Creates a smaller version of the button.
+  ///
+  /// The [height] and [radius] parameters can be used to customize the size.
   Widget small({double height = 34, double radius = 4, double? fontSize}) {
     // Determine the active background color
     Color activeBackgroundColor =
@@ -248,7 +290,16 @@ class PrimaryOutlinedButton extends StatelessWidget {
   }
 }
 
+/// A customizable outlined button widget with an icon.
+///
+/// The [PrimaryOutlinedButtonIcon] can be used to create a button with an icon,
+/// customizable colors, and styles. It supports both active and disabled states.
+///
+/// The [onTap] callback is triggered when the button is pressed.
 class PrimaryOutlinedButtonIcon extends StatelessWidget {
+  /// Creates a [PrimaryOutlinedButtonIcon].
+  ///
+  /// The [icon] parameter must not be null.
   const PrimaryOutlinedButtonIcon({
     super.key,
     this.activeBackgroundColor,
@@ -263,15 +314,34 @@ class PrimaryOutlinedButtonIcon extends StatelessWidget {
     this.radius = 4,
   });
 
-  final Color? activeBackgroundColor;
-  final Color? disabledBackgroundColor;
-  final Color? activeForegroundColor;
-  final Color? disabledForegroundColor;
+  /// The icon to display in the button.
   final IconData icon;
+
+  /// The background color when the button is active.
+  final Color? activeBackgroundColor;
+
+  /// The background color when the button is disabled.
+  final Color? disabledBackgroundColor;
+
+  /// The foreground color when the button is active.
+  final Color? activeForegroundColor;
+
+  /// The foreground color when the button is disabled.
+  final Color? disabledForegroundColor;
+
+  /// Whether the button is in a loading state.
   final bool isLoading;
+
+  /// The callback to be called when the button is tapped.
   final VoidCallback? onTap;
+
+  /// The height of the button.
   final double height;
+
+  /// The width of the button.
   final double? width;
+
+  /// The border radius of the button.
   final double radius;
 
   @override
@@ -355,7 +425,16 @@ class PrimaryOutlinedButtonIcon extends StatelessWidget {
   }
 }
 
+/// A customizable outlined button widget with an image.
+///
+/// The [OutlinedButtonImage] can be used to create a button with an image,
+/// customizable colors, and styles. It supports both active and disabled states.
+///
+/// The [onTap] callback is triggered when the button is pressed.
 class OutlinedButtonImage extends StatelessWidget {
+  /// Creates an [OutlinedButtonImage].
+  ///
+  /// The [imagePath] parameter must not be null.
   const OutlinedButtonImage({
     super.key,
     this.activeBackgroundColor,
@@ -370,15 +449,34 @@ class OutlinedButtonImage extends StatelessWidget {
     required this.imagePath,
   });
 
-  final Color? activeBackgroundColor;
-  final Color? disabledBackgroundColor;
-  final Color? activeForegroundColor;
-  final Color? disabledForegroundColor;
+  /// The path to the image to display in the button.
   final String imagePath;
+
+  /// The background color when the button is active.
+  final Color? activeBackgroundColor;
+
+  /// The background color when the button is disabled.
+  final Color? disabledBackgroundColor;
+
+  /// The foreground color when the button is active.
+  final Color? activeForegroundColor;
+
+  /// The foreground color when the button is disabled.
+  final Color? disabledForegroundColor;
+
+  /// Whether the button is in a loading state.
   final bool isLoading;
+
+  /// The callback to be called when the button is tapped.
   final VoidCallback? onTap;
+
+  /// The height of the button.
   final double buttonHeight;
+
+  /// The width of the button.
   final double? width;
+
+  /// The border radius of the button.
   final double radius;
 
   @override

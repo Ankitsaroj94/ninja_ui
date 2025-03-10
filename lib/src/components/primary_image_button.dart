@@ -5,7 +5,16 @@ import 'package:get/get.dart';
 import '../theme/app_colors.dart';
 import 'magic_loader.dart';
 
+/// A customizable button widget that displays an image and supports loading state.
+///
+/// The `PrimaryImageButton` can be configured with different colors for active and disabled states,
+/// and can display a loading indicator when needed.
+///
+/// The button's appearance and behavior can be customized using the provided parameters.
 class PrimaryImageButton extends StatelessWidget {
+  /// Creates a [PrimaryImageButton].
+  ///
+  /// The [imagePath] parameter must not be null.
   const PrimaryImageButton({
     super.key,
     this.activeBackgroundColor,
@@ -20,15 +29,35 @@ class PrimaryImageButton extends StatelessWidget {
     required this.imagePath,
   });
 
+  /// The background color when the button is active.
   final Color? activeBackgroundColor;
+
+  /// The background color when the button is disabled.
   final Color? disabledBackgroundColor;
+
+  /// The foreground color when the button is active.
   final Color? activeForegroundColor;
+
+  /// The foreground color when the button is disabled.
   final Color? disabledForegroundColor;
+
+  /// The path to the image asset to display on the button.
   final String imagePath;
+
+  /// Whether the button is in a loading state.
   final bool isLoading;
+
+  /// The callback to be invoked when the button is tapped.
+  /// If null, the button is considered disabled.
   final VoidCallback? onTap;
+
+  /// The height of the button.
   final double buttonHeight;
+
+  /// The width of the button. If null, the button will size itself to fit its content.
   final double? width;
+
+  /// The border radius of the button.
   final double radius;
 
   @override

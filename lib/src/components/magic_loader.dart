@@ -5,7 +5,16 @@ import 'package:magic_extensions/magic_extensions.dart';
 
 import '../theme/app_colors.dart';
 
-class MagicLoader extends StatelessWidget {  
+/// A widget that displays a loading indicator, adapting to the platform.
+///
+/// The [MagicLoader] can display either a [CupertinoActivityIndicator] for iOS
+/// or a [CircularProgressIndicator] for other platforms. The size, color, and
+/// optional stroke width can be customized.
+class MagicLoader extends StatelessWidget {
+  /// Creates a [MagicLoader] widget.
+  ///
+  /// The [size] and [color] parameters must not be null.
+  /// The [strokeWidth] is optional and defaults to 2 if not provided.
   const MagicLoader({
     super.key,
     required this.size,
@@ -13,8 +22,13 @@ class MagicLoader extends StatelessWidget {
     this.strokeWidth,
   });
 
+  /// The size of the loader.
   final double size;
+
+  /// The color of the loader.
   final Color color;
+
+  /// The stroke width of the loader, applicable for non-iOS platforms.
   final double? strokeWidth;
 
   @override
@@ -35,7 +49,7 @@ class MagicLoader extends StatelessWidget {
     );
   }
 
-  // Static method to provide a default loader
+  /// Provides a default loader with a predefined size and color.
   static Widget defaultLoader() =>
       const MagicLoader(size: 30, color: AppColors.primary);
 }
