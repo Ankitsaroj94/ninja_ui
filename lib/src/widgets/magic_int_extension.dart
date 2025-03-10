@@ -11,8 +11,10 @@ extension IntExtension on int? {
   /// [endStatusCode] specifies the end of the valid range. Defaults to 299.
   ///
   /// Returns true if the [int] instance is within the range, otherwise false.
-  bool validateStatusCode(
-          {int startStatusCode = 200, int endStatusCode = 299}) =>
+  bool validateStatusCode({
+    int startStatusCode = 200,
+    int endStatusCode = 299,
+  }) =>
       (this != null) && (this! >= startStatusCode) && (this! <= endStatusCode);
 
   /// Converts the current value to a [Color].

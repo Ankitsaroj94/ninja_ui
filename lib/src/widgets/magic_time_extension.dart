@@ -46,8 +46,13 @@ extension MagicTimeExtension on TimeOfDay? {
   String convert({String placeHolder = '', String format = 'hh:mm a'}) {
     if (this == null) return placeHolder;
     DateTime now = DateTime.now();
-    final DateTime dateTime =
-        DateTime(now.year, now.month, now.day, this!.hour, this!.minute);
+    final DateTime dateTime = DateTime(
+      now.year,
+      now.month,
+      now.day,
+      this!.hour,
+      this!.minute,
+    );
     return dateTime.format(format: format, placeholder: placeHolder);
   }
 }

@@ -17,17 +17,8 @@ extension MagicWidgetExtension on Widget {
   /// ```dart
   /// Text('Flexible Text').flexible(fit: FlexFit.tight, flex: 2);
   /// ```
-  Widget flexible({
-    FlexFit fit = FlexFit.loose,
-    int flex = 1,
-    Key? key,
-  }) =>
-      Flexible(
-        fit: fit,
-        flex: flex,
-        key: key,
-        child: this,
-      );
+  Widget flexible({FlexFit fit = FlexFit.loose, int flex = 1, Key? key}) =>
+      Flexible(fit: fit, flex: flex, key: key, child: this);
 
   /// Wraps the widget in an [Expanded] widget.
   ///
@@ -40,15 +31,8 @@ extension MagicWidgetExtension on Widget {
   /// ```dart
   /// Container().expanded(flex: 3);
   /// ```
-  Widget expanded({
-    int flex = 1,
-    Key? key,
-  }) =>
-      Expanded(
-        flex: flex,
-        key: key,
-        child: this,
-      );
+  Widget expanded({int flex = 1, Key? key}) =>
+      Expanded(flex: flex, key: key, child: this);
 
   /// Wraps the widget in a [Center] widget.
   ///
@@ -59,13 +43,7 @@ extension MagicWidgetExtension on Widget {
   /// ```dart
   /// Container().center();
   /// ```
-  Widget center({
-    Key? key,
-  }) =>
-      Center(
-        key: key,
-        child: this,
-      );
+  Widget center({Key? key}) => Center(key: key, child: this);
 
   /// Wraps the widget in a [Container] with a debug color.
   ///
@@ -79,15 +57,8 @@ extension MagicWidgetExtension on Widget {
   /// ```dart
   /// Text('Debug').debugContainer();
   /// ```
-  Widget debugContainer({
-    Key? key,
-    Color color = Colors.red,
-  }) =>
-      Container(
-        key: key,
-        color: color,
-        child: this,
-      );
+  Widget debugContainer({Key? key, Color color = Colors.red}) =>
+      Container(key: key, color: color, child: this);
 
   /// Wraps the widget in a [Container] with a debug border.
   ///
@@ -108,15 +79,11 @@ extension MagicWidgetExtension on Widget {
     Key? key,
     Color color = Colors.red,
     double thickness = 1,
-  }) =>
-      Container(
-        key: key,
-        decoration: BoxDecoration(
-          border: Border.all(
-            color: color,
-            width: thickness,
-          ),
-        ),
-        child: this,
-      );
+  }) => Container(
+    key: key,
+    decoration: BoxDecoration(
+      border: Border.all(color: color, width: thickness),
+    ),
+    child: this,
+  );
 }
