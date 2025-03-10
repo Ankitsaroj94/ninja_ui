@@ -1,13 +1,10 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart' hide TextDirection;
-import 'package:magic_ui_color/src/widgets/magic_color_extension.dart';
-import 'package:magic_ui_color/src/widgets/magic_date_extension.dart';
-import 'package:magic_ui_color/src/widgets/magic_status_colors.dart'
-    show MagicStatusColors;
+import 'package:ninja_ui/ninja_ui.dart';
 
 /// Extension methods for handling nullable [String] objects.
-extension MagicNullStringExtension on String? {
+extension NinjaUiNullStringExtension on String? {
   /// Checks if the nullable [String] is neither null nor empty.
   bool get isNotNullAndNotEmpty => this != null && this!.isNotEmpty;
 
@@ -328,8 +325,8 @@ extension MagicStringExtension on String {
   /// Uses [MagicStatusColors.statusColors] to find a matching color.
   /// If no matching color is found, defaults to a transparent color.
   Color get toStatusColor =>
-      MagicStatusColors.statusColors[this] ??
-      MagicStatusColors.statusColors['default'] ??
+      NinjaUiStatusColors.statusColors[this] ??
+      NinjaUiStatusColors.statusColors['default'] ??
       Colors.transparent;
 
   /// Retrieves a color from a map based on the current [String] value.

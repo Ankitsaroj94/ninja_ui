@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 /// Extension on [Widget] to provide convenient methods for wrapping
 /// widgets with [Flexible], [Expanded], [Center], and debug widgets.
-extension MagicWidgetExtension on Widget {
+extension NinjaUiWidgetExtension on Widget {
   /// Wraps the widget in a [Flexible] widget.
   ///
   /// The [fit] parameter determines how the child is resized within

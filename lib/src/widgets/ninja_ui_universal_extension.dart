@@ -1,17 +1,17 @@
 import 'dart:collection';
 import 'dart:developer';
 
-import 'magic_string_extension.dart';
+import 'ninja_ui_string_extension.dart';
 
 /// Extension methods for nullable values of any type.
-extension MagicUniversalExtension<T> on T? {
+extension NinjaUiUniversalExtension<T> on T? {
   /// Checks if the value is `null`.
   bool get isNull => this == null;
 
   /// Logs the value and its type to the console.
   ///
   /// - [name]: The name of the log entry.
-  void console({String name = 'MAGIC EXTENSION'}) {
+  void console({String name = 'NINJA UI EXTENSION'}) {
     log(
       'value: ${this?.toString()}, type: ${this?.runtimeType.toString()}',
       name: name,
@@ -101,7 +101,7 @@ extension MagicUniversalExtension<T> on T? {
 
     log(
       'Unsupported Data Type: ${this?.runtimeType.toString()}',
-      name: 'MAGIC EXTENSION',
+      name: 'NINJA UI EXTENSION',
     );
     return defaultValue;
   }
@@ -168,7 +168,7 @@ extension MagicUniversalExtension<T> on T? {
 
     log(
       'Unsupported Data Type: ${this?.runtimeType.toString()}',
-      name: 'MAGIC EXTENSION',
+      name: 'NINJA UI EXTENSION',
     );
     return defaultValue;
   }
@@ -218,7 +218,7 @@ extension MagicUniversalExtension<T> on T? {
 
     log(
       'Unsupported Data Type: ${this?.runtimeType.toString()}',
-      name: 'MAGIC EXTENSION',
+      name: 'NINJA UI EXTENSION',
     );
     return defaultValue;
   }

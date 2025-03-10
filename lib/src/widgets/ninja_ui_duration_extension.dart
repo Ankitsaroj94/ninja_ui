@@ -1,5 +1,5 @@
 /// An extension on `Duration` to provide a human-readable format for the duration.
-extension MagicDurationExtension on Duration? {
+extension NinjaUiDurationExtension on Duration? {
   /// Returns a human-readable string representation of the duration.
   ///
   /// - If the duration is less than 60 minutes, returns the duration in minutes (e.g., "5m").

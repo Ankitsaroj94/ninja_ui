@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 /// An extension on [Color?] that adds utility methods for color manipulation.
-extension MagicColorExtension on Color? {
+extension NinjaUiColorExtension on Color? {
   /// Converts the color to a hexadecimal string representation.
   ///
   /// If the color is null, it defaults to the specified [defaultColor].
@@ -17,7 +17,7 @@ extension MagicColorExtension on Color? {
 }
 
 /// An extension on [Color] that provides additional utility methods.
-extension MagicColorNotNullExtension on Color {
+extension NinjaUiColorNotNullExtension on Color {
   /// Converts the color to an integer representation.
   ///
   /// The integer representation is in the format 0xAARRGGBB, where:

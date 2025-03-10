@@ -1,7 +1,7 @@
 import 'package:intl/intl.dart';
 
 /// Extension methods for nullable [DateTime] objects.
-extension MagicDateExtension on DateTime? {
+extension NinjaUiDateExtension on DateTime? {
   /// Formats the [DateTime] instance to a string based on the provided format.
   ///
   /// If the [DateTime] instance is null, returns the [placeholder] string.

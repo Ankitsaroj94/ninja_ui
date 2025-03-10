@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/utils.dart';
-import 'package:magic_ui_color/magic_ui_color.dart';
+import 'package:ninja_ui/ninja_ui.dart';
 
 /// A customizable outlined button widget with optional leading and trailing widgets.
 ///
@@ -148,7 +148,7 @@ class PrimaryOutlinedButton extends StatelessWidget {
             duration: 500.milliseconds,
             child:
                 isLoading
-                    ? MagicLoader(
+                    ? NinjaUi(
                       size: height / 2,
                       color:
                           isDisabled
@@ -256,7 +256,7 @@ class PrimaryOutlinedButton extends StatelessWidget {
             duration: 500.milliseconds,
             child:
                 isLoading
-                    ? MagicLoader(
+                    ? NinjaUi(
                       size: height / 2,
                       color:
                           isDisabled
@@ -402,7 +402,7 @@ class PrimaryOutlinedButtonIcon extends StatelessWidget {
             duration: 500.milliseconds,
             child:
                 isLoading
-                    ? MagicLoader(
+                    ? NinjaUi(
                       size: height / 2,
                       color:
                           isDisabled
@@ -532,7 +532,7 @@ class OutlinedButtonImage extends StatelessWidget {
           duration: 500.milliseconds,
           child:
               isLoading
-                  ? MagicLoader(
+                  ? NinjaUi(
                     size: buttonHeight / 2,
                     color:
                         isDisabled

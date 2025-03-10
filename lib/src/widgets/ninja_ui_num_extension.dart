@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 /// Extension on [num] to provide convenient methods for setting the width of a widget.
-extension MagicNumExtension on num {
+extension NinjaUiNumExtension on num {
   /// Returns a [SizedBox] with the width set to the value of this [num].
   ///
   /// Optionally, a [child] widget can be passed along with an optional [key].

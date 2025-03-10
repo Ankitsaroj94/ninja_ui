@@ -1,8 +1,8 @@
-import 'magic_universal_extension.dart';
+import 'ninja_ui_universal_extension.dart';
 
 /// An extension on [Iterable] that provides additional utility methods
 /// for handling nullable elements and performing common operations.
-extension MagicIterableExtension<E> on Iterable<E?> {
+extension NinjaUiIterableExtension<E> on Iterable<E?> {
   /// Returns `true` if all non-null elements in the iterable evaluate to `true` when converted to a [bool].
   ///
   /// This method uses the [magicBool] method to convert each element to a boolean.

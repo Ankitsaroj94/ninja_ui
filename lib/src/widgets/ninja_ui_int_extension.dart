@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 /// Extension methods for nullable [int] objects.
-extension IntExtension on int? {
+extension NinjaUiIntExtension on int? {
   /// Validates if the nullable [int] represents a status code within a specified range.
   ///
   /// Checks if the [int] instance is not null and falls within the inclusive range

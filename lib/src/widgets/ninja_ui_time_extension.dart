@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'magic_date_extension.dart';
+import 'ninja_ui_date_extension.dart';
 
 /// Extension methods for nullable [TimeOfDay] objects.
-extension MagicTimeExtension on TimeOfDay? {
+extension NinjaUiTimeExtension on TimeOfDay? {
   /// Checks if the nullable [TimeOfDay] is after another [TimeOfDay].
   ///
   /// Returns true if the current [TimeOfDay] instance is later in time compared to [toTime].

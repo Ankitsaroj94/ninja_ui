@@ -1,9 +1,9 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:flutter/material.dart';
-import 'package:magic_ui_color/magic_ui_color.dart';
+import 'package:ninja_ui/ninja_ui.dart';
 
 void main() {
-  group('Magic UI Package Tests', () {
+  group('Ninja UI Package Tests', () {
     test('AppColors primary color should be correct', () {
       expect(AppColors.primary.shade500, equals(Color(0xFF2E90FA)));
     });
@@ -36,14 +36,14 @@ void main() {
       expect(find.text('Submit'), findsOneWidget);
     });
 
-    testWidgets('MagicLoader renders correctly', (WidgetTester tester) async {
+    testWidgets('NinjaUi renders correctly', (WidgetTester tester) async {
       await tester.pumpWidget(
         const MaterialApp(
-          home: Scaffold(body: MagicLoader(size: 30, color: Colors.blue)),
+          home: Scaffold(body: NinjaUi(size: 30, color: Colors.blue)),
         ),
       );
 
-      expect(find.byType(MagicLoader), findsOneWidget);
+      expect(find.byType(NinjaUi), findsOneWidget);
     });
 
     testWidgets('CustomDialog renders correctly', (WidgetTester tester) async {

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 /// A utility class for managing status colors.
-abstract class MagicStatusColors {
+abstract class NinjaUiStatusColors {
   // A private map holding the default status colors.
   static final Map<String, Color> _statusColorsMap = {
     'success': Colors.green,

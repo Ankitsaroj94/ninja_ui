@@ -1,21 +1,19 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:magic_ui_color/src/widgets/magic_num_extension.dart';
-
-import '../theme/app_colors.dart';
+import 'package:ninja_ui/ninja_ui.dart';
 
 /// A widget that displays a loading indicator, adapting to the platform.
 ///
-/// The [MagicLoader] can display either a [CupertinoActivityIndicator] for iOS
+/// The [NinjaUi] can display either a [CupertinoActivityIndicator] for iOS
 /// or a [CircularProgressIndicator] for other platforms. The size, color, and
 /// optional stroke width can be customized.
-class MagicLoader extends StatelessWidget {
-  /// Creates a [MagicLoader] widget.
+class NinjaUi extends StatelessWidget {
+  /// Creates a [NinjaUi] widget.
   ///
   /// The [size] and [color] parameters must not be null.
   /// The [strokeWidth] is optional and defaults to 2 if not provided.
-  const MagicLoader({
+  const NinjaUi({
     super.key,
     required this.size,
     required this.color,
@@ -51,5 +49,5 @@ class MagicLoader extends StatelessWidget {
 
   /// Provides a default loader with a predefined size and color.
   static Widget defaultLoader() =>
-      const MagicLoader(size: 30, color: AppColors.primary);
+      const NinjaUi(size: 30, color: AppColors.primary);
 }

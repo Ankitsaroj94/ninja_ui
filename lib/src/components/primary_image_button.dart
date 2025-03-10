@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
-
-import '../theme/app_colors.dart';
-import 'magic_loader.dart';
+import 'package:ninja_ui/ninja_ui.dart';
 
 /// A customizable button widget that displays an image and supports loading state.
 ///
@@ -105,7 +103,7 @@ class PrimaryImageButton extends StatelessWidget {
             duration: 500.milliseconds,
             child:
                 isLoading
-                    ? MagicLoader(
+                    ? NinjaUi(
                       size: buttonHeight / 2,
                       color:
                           isDisabled
