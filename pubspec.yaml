@@ -1,6 +1,6 @@
 name: magic_ui_color
 description: "A Flutter UI package with reusable components, text styles, and colors to speed up development."
-version: 0.0.13
+version: 0.0.14
 homepage: https://github.com/Ankitsaroj94/magic_ui
 repository: https://github.com/Ankitsaroj94/magic_ui
 issue_tracker: https://github.com/Ankitsaroj94/magic_ui/issues

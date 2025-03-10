@@ -20,3 +20,11 @@
 - Added `Logger` class for logging messages with different log levels.
 - Updated dependencies in `pubspec.yaml`.
 - Improved documentation and code comments for better clarity.
+
+## [0.0.14] - 2024-03-10
+- Added `MagicStatusColors` utility class for managing status colors.
+- Introduced `MagicNumExtension` for convenient methods on `num` to set widget dimensions.
+- Added `MagicTimeExtension` for nullable `TimeOfDay` objects with methods for comparison and formatting.
+- Introduced `MagicWidgetExtension` for wrapping widgets with `Flexible`, `Expanded`, `Center`, and debug widgets.
+- Added `IntExtension` for nullable `int` objects with methods for status code validation and color conversion.
+- Improved overall code documentation and comments for better clarity.
