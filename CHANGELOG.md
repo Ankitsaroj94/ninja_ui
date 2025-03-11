@@ -62,3 +62,8 @@
 - Added `NinjaUiWidgetExtension` for additional widget wrapping methods.
 - Added `NinjaUiUniversalExtension` for nullable values with methods for logging and type conversion.
 - Improved overall code quality and performance.
+
+## [0.0.17] - 2024-03-13
+- Updated intl package version to `0.19.0`.
+
+
